@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy valantine's day Hanoon 💖</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+      scroll-behavior: smooth;
+    }
+/* 💖 Falling Hearts Animation */
+.heart {
+  position: fixed;
+  top: -10px;
+  font-size: 18px;
+  color: #ff4f9a;
+  animation: fall linear forwards;
+  pointer-events: none;
+  z-index: -1;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(110vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+    body {
+      background: linear-gradient(135deg, #ffa3cb, #fff1f7);
+      color: #333;
+      text-align: center;
+      overflow-x: hidden;
+    }
+
+    section {
+      padding: 80px 20px;
+    }
+
+    h1, h2 {
+      font-family: "Playfair Display", serif;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      font-size: 2.2rem;
+      margin-bottom: 20px;
+    }
+
+    p {
+      max-width: 700px;
+      margin: 0 auto 20px;
+      font-size: 1.1rem;
+      line-height: 1.7;
+    }
+
+    .btn {
+      padding: 12px 25px;
+      background: #ff4f9a;
+      color: white;
+      border: none;
+      border-radius: 30px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #e83d85;
+    }
+
+    /* Hero */
+    #hero {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #countdown {
+      font-size: 1.5rem;
+      margin-top: 15px;
+    }
+
+    /* Gallery */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 15px;
+      object-fit: cover;
+    }
+
+    /* Reasons */
+    .reasons {
+      max-width: 600px;
+      margin: auto;
+      text-align: left;
+    }
+
+    .reasons li {
+      margin-bottom: 12px;
+      font-size: 1.1rem;
+    }
+
+    /* Music */
+    .music-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #ff4f9a;
+      color: white;
+      border-radius: 50%;
+      width: 55px;
+      height: 55px;
+      border: none;
+      font-size: 1.4rem;
+      cursor: pointer;
+    }
+
+    /* Surprise */
+    #surprise {
+      display: none;
+      background: #ffebf3;
+    }
+
+    footer {
+      padding: 30px;
+      font-size: 0.9rem;
+      opacity: 0.7;
+    }
+  </style>
+</head>
+<body>
+
+<!-- 🎉 HERO -->
+<section id="hero">
+  <h1>Happy valantine's day, Lolo 💘</h1>
+  <br>
+  <button class="btn"   onclick="smoothScrollTo('#letter')" >Open Your Gift 🎁</button>
+</section>
+
+<!-- 💌 LOVE LETTER -->
+<section id="letter">
+  <h2>My Love Letter to You 💌</h2>
+  <p>
+    Happy valantine's day, my future wife.  
+    
+  <p>
+<p>Every Valentine’s Day with you feels different, because loving you is not just something I celebrate once a year — it’s something I live every single day. I’m grateful that you’re always with me, beside me, supporting me, and believing in me. You stand next to me with confidence and loyalty, and that means more than I can ever explain. You always make me feel like I matter in your life, like I have real value in your heart, and that feeling is priceless.
+I love how you care, how you trust me, and how you make me stronger just by being there. With you, I don’t feel alone. I feel understood. I feel appreciated. I feel lucky. You don’t just say you love me — you show it in the way you talk to me, the way you stand by me, and the way you never make me doubt your feelings.
+I love you so much, my little duck, my beautiful Haneen. You are truly the sweetest Haneen in the whole world, and my heart chose you for a reason. Being with you is something I’m proud of, and staying by your side is something I promise with honesty and respect.
+No matter what comes in life, I’ll always choose you, support you, and stand with you. Happy Valentine’s Day to the girl who makes my days brighter and my heart happier. 💖</p>
+
+  
+</section>
+
+<!-- 📸 GALLERY -->
+<!--<section>
+  <h2>Our Memories 📸</h2>
+  <p style="margin-top:15px;">I really wanted to have some memories or photos with you, but in the future, I hope we will be together and have all the memories we want. </p>
+  
+
+<h3>But at least I have memories of you</h3>
+
+  <p>That began with the first session we had with Apex, when I saw you. I loved your beauty and appearance, not more than that, after about a year, I found myself thinking of you a lot. I realize that I might love you, but I ignore it and say that it's just because of your appearance. then, thinking of you took more and more of my time so I decided to just confess that I fell in love with you, and that moment was the transformation point in my life, as your love growth inside of me I started to think of how can I be with you in the future and started to do what I found it suitable to make me the person that might gain you and your love. That is the part of the story that you might not know. </p>
+    
+
+
+</section>-->
+
+
+<!-- 🎁 SURPRISE -->
+<section>
+  <h2>One Last Thing… ✨</h2>
+  <p>Click when you’re ready.</p>
+  <button class="btn" onclick="showSurprise()" >Reveal Surprise 💖</button>
+</section>
+
+<section id="surprise">
+  <h2>💖 Surprise 💖</h2>
+  <p><strong>Ba7ebek ya kol 7yaty 😍</strong></p>
+</section>
+
+<footer>
+  Made with love ❤️
+</footer>
+
+<!-- 🎶 MUSIC -->
+<button class="music-btn" onclick="toggleMusic()">🎵</button>
+<audio id="music" loop>
+  <source src="Albumaty.Com.Amr.Diab_We.Redet.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+  // Countdown
+  const birthday = new Date("February 1, 2026 00:00:00").getTime();
+
+  setInterval(() => {
+    const now = new Date().getTime();
+    const diff = birthday - now;
+
+    if (diff < 0) {
+      document.getElementById("countdown").innerHTML = "🎉 It’s your birthday today! 🎉";
+      return;
+    }
+
+    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+    const mins = Math.floor((diff / (1000 * 60)) % 60);
+    const secs = Math.floor((diff / 1000) % 60);
+
+    document.getElementById("countdown").innerHTML =
+      `⏳ ${days}d ${hours}h ${mins}m ${secs}s`;
+  }, 1000);
+
+  function scrollToSection(id) {
+    document.getElementById(id).scrollIntoView({ behavior: "smooth" });
+  }
+function smoothScrollTo(targetSelector) {
+    document.querySelector(targetSelector).scrollIntoView({
+      behavior: 'smooth'
+    });
+  }
+  function showSurprise() {
+    document.getElementById("surprise").style.display = "block";
+    scrollToSection("surprise");
+  }
+
+  let playing = false;
+  const music = document.getElementById("music");
+
+  function toggleMusic() {
+    if (playing) {
+      music.pause();
+    } else {
+      music.play();
+    }
+    playing = !playing;
+  }
+  /* 💖 Create Falling Hearts */
+function createHeart() {
+  const heart = document.createElement("div");
+  heart.classList.add("heart");
+  heart.innerHTML = "💖";
+
+  heart.style.left = Math.random() * 100 + "vw";
+  heart.style.fontSize = Math.random() * 20 + 10 + "px";
+  heart.style.animationDuration = Math.random() * 3 + 4 + "s";
+  heart.style.opacity = Math.random();
+
+  document.body.appendChild(heart);
+
+  setTimeout(() => {
+    heart.remove();
+  }, 7000);
+}
+
+// Create hearts continuously
+setInterval(createHeart, 300);
+
+
+</script>
+
+</body>
+</html>
